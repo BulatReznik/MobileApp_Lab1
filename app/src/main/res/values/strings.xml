@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">Lab_1</string>
+    <string name="app_name">CheckЛистик</string>
+    <string name="InputText">Введите название комплектующей</string>
+    <string name="Add">Добавить</string>
+    <string name="ChooseComponent">Выбрать компонент</string>
+    <string name="Reset">Сброс</string>
+    <string name="ShowComponents">Отобразить значения</string>
 
 </resources>

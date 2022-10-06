@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         buttonReset.setOnClickListener(view ->{
-            for(int i = 0; i< Component.list.size(); i++){
+            for(int i = 0; i< Component.list.size(); i++) {
                 componentList.setItemChecked(i, false);
             }
         });

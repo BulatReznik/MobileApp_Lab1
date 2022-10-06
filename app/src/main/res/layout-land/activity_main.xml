@@ -18,79 +18,90 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_weight="3"
                 android:orientation="vertical">
 
                 <ListView
                     android:id="@+id/componentsListView"
-                    android:layout_width="600dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:choiceMode="multipleChoice"/>
+                    android:layout_weight="3"
+                    android:choiceMode="multipleChoice" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/buttonChoose"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Choose component" />
+                    android:layout_weight="1"
+                    android:text="@string/choose_component" />
 
                 <Button
                     android:id="@+id/buttonReset"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Reset" />
+                    android:layout_weight="1"
+                    android:text="@string/reset" />
 
                 <Button
                     android:id="@+id/buttonDisplay"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Display values" />
+                    android:layout_weight="1"
+                    android:text="@string/display_values" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Enter component" />
+                    android:text="@string/enter_component" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/componentInput"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="12"
+                    android:autofillHints=""
+                    tools:ignore="LabelFor" />
 
                 <Button
                     android:id="@+id/buttonAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Add" />
+                    android:layout_weight="1"
+                    android:text="@string/add" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
